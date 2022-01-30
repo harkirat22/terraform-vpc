@@ -16,7 +16,7 @@ variable "aws_region" {
 }
 
 variable "aws_vpc_name" {
-  default = "vpc"
+  default = "sko-vpc"
 }
 
 variable "aws_azs" {
@@ -188,8 +188,8 @@ variable "global_tags" {
   description = "AWS tags that will be added to all resources managed herein"
   type = map(string)
   default = {
-    "Author" = "Fairwinds"
-    "Managed By" = "Terraform"
+    "Author" = "Harkirat"
+    "Purpose" = "Sko-demo"
   }
 }
 
